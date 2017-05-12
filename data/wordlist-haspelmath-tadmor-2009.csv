@@ -1,0 +1,1484 @@
+1,h1,The physical world
+2,1-1,the world
+3,1-21,the land
+4,1-212,the soil
+5,1-213,the dust
+6,1-214,the mud
+7,1-215,the sand
+8,1-22,the mountain or hill
+9,1-222,the cliff or precipice
+10,1-23,the plain
+11,1-24,the valley
+12,1-25,the island
+13,1-26,the mainland
+14,1-27,the shore
+15,1-28,the cave
+16,1-31,the water
+17,1-32,the sea
+18,1-322,calm
+19,1-323,rough(2)
+20,1-324,the foam
+21,1-329,the ocean
+22,1-33,the lake
+23,1-34,the bay
+24,1-341,the lagoon
+25,1-342,the reef
+26,1-343,the cape
+27,1-35,the wave
+28,1-352,the tide
+29,1-353,the low tide
+30,1-354,the high tide
+31,1-36,the river or stream
+32,1-362,the whirlpool
+33,1-37,the spring or well
+34,1-38,the swamp
+35,1-39,the waterfall
+36,1-41,the woods or forest
+37,1-411,the savanna
+38,1-43,the wood
+39,1-44,the stone or rock
+40,1-45,the earthquake
+41,1-51,the sky
+42,1-52,the sun
+43,1-53,the moon
+44,1-54,the star
+45,1-55,the lightning
+46,1-56,the thunder
+47,1-57,the bolt of lightning
+48,1-58,the storm
+49,1-59,the rainbow
+50,1-61,the light
+51,1-62,the darkness
+52,1-63,the shade or shadow
+53,1-64,the dew
+54,1-71,the air
+55,1-72,the wind
+56,1-73,the cloud
+57,1-74,the fog
+58,1-75,the rain
+59,1-76,the snow
+60,1-77,the ice
+61,1-771,the arctic lights
+62,1-775,to freeze
+63,1-78,the weather
+64,1-81,the fire
+65,1-82,the flame
+66,1-83,the smoke
+67,1-831,the steam
+68,1-84,the ash
+69,1-841,the embers
+70,1-851,to burn(1)
+71,1-852,to burn(2)
+72,1-86,to light
+73,1-861,to extinguish
+74,1-87,the match
+75,1-88,the firewood
+76,1-89,the charcoal
+77,h2,Kinship
+78,2-1,the person
+79,2-21,the man
+80,2-22,the woman
+81,2-23,male(1)
+82,2-24,female(1)
+83,2-25,the boy
+84,2-251,the young man
+85,2-26,the girl
+86,2-261,the young woman
+87,2-27,the child(1)
+88,2-28,the baby
+89,2-31,the husband
+90,2-32,the wife
+91,2-33,to marry
+92,2-34,the wedding
+93,2-341,the divorce
+94,2-35,the father
+95,2-36,the mother
+96,2-37,the parents
+97,2-38,the married man
+98,2-39,the married woman
+99,2-41,the son
+100,2-42,the daughter
+101,2-43,the child(2)
+102,2-44,the brother
+103,2-444,the older brother
+104,2-445,the younger brother
+105,2-45,the sister
+106,2-454,the older sister
+107,2-455,the younger sister
+108,2-456,the sibling
+109,2-4561,the older sibling
+110,2-4562,the younger sibling
+111,2-458,the twins
+112,2-46,the grandfather
+113,2-461,the old man
+114,2-47,the grandmother
+115,2-471,the old woman
+116,2-4711,the grandparents
+117,2-48,the grandson
+118,2-49,the granddaughter
+119,2-5,the grandchild
+120,2-51,the uncle
+121,2-511,the mother's brother
+122,2-512,the father's brother
+123,2-52,the aunt
+124,2-521,the mother's sister
+125,2-522,the father's sister
+126,2-53,the nephew
+127,2-54,the niece
+128,2-541,the sibling’s child
+129,2-55,the cousin
+130,2-56,the ancestors
+131,2-57,the descendants
+132,2-61,the father-in-law (of a man)
+133,2-611,the father-in-law (of a woman)
+134,2-62,the mother-in-law (of a man)
+135,2-621,the mother-in-law (of a woman)
+136,2-622,the parents-in-law
+137,2-63,the son-in-law (of a man)
+138,2-631,the son-in-law (of a woman)
+139,2-64,the daughter-in-law (of a man)
+140,2-641,the daughter-in-law (of a woman)
+141,2-6411,the child-in-law
+142,2-6412,the sibling-in-law
+143,2-71,the stepfather
+144,2-72,the stepmother
+145,2-73,the stepson
+146,2-74,the stepdaughter
+147,2-75,the orphan
+148,2-76,the widow
+149,2-77,the widower
+150,2-81,the relatives
+151,2-82,the family
+152,2-91,I
+153,2-92,you (singular)
+154,2-93,he/she/it
+155,2-931,he
+156,2-932,she
+157,2-933,it
+158,2-94,we
+159,2-941,we (inclusive)
+160,2-942,we (exclusive)
+161,2-95,you (plural)
+162,2-96,they
+163,h3,Animals
+164,3-11,the animal
+165,3-12,male(2)
+166,3-13,female(2)
+167,3-15,the livestock
+168,3-16,the pasture
+169,3-18,the herdsman
+170,3-19,the stable or stall
+171,3-2,the cattle
+172,3-21,the bull
+173,3-22,the ox
+174,3-23,the cow
+175,3-24,the calf
+176,3-25,the sheep
+177,3-26,the ram
+178,3-28,the ewe
+179,3-29,the lamb
+180,3-32,the boar
+181,3-34,the sow
+182,3-35,the pig
+183,3-36,the goat
+184,3-37,the he-goat
+185,3-38,the kid
+186,3-41,the horse
+187,3-42,the stallion
+188,3-44,the mare
+189,3-45,the foal or colt
+190,3-46,the donkey
+191,3-47,the mule
+192,3-5,the fowl
+193,3-52,the cock/rooster
+194,3-54,the hen
+195,3-55,the chicken
+196,3-56,the goose
+197,3-57,the duck
+198,3-58,the nest
+199,3-581,the bird
+200,3-582,the seagull
+201,3-583,the heron
+202,3-584,the eagle
+203,3-585,the hawk
+204,3-586,the vulture
+205,3-591,the bat
+206,3-592,the parrot
+207,3-593,the crow
+208,3-594,the dove
+209,3-596,the owl
+210,3-597,the cormorant
+211,3-598,the toucan
+212,3-61,the dog
+213,3-614,the rabbit
+214,3-62,the cat
+215,3-622,the opossum
+216,3-63,the mouse or rat
+217,3-65,the fish
+218,3-652,the fin
+219,3-653,the scale
+220,3-654,the gill
+221,3-655,the shell
+222,3-661,the shark
+223,3-662,the porpoise or dolphin
+224,3-663,the whale
+225,3-664,the stingray
+226,3-665,the freshwater eel
+227,3-71,the wolf
+228,3-72,the lion
+229,3-73,the bear
+230,3-74,the fox
+231,3-75,the deer
+232,3-76,the monkey
+233,3-77,the elephant
+234,3-78,the camel
+235,3-81,the insect
+236,3-811,the head louse
+237,3-8112,the body louse
+238,3-812,the nit
+239,3-813,the flea
+240,3-814,the centipede
+241,3-815,the scorpion
+242,3-816,the cockroach
+243,3-817,the ant
+244,3-818,the spider
+245,3-819,the spider web
+246,3-82,the bee
+247,3-821,the beeswax
+248,3-822,the beehive
+249,3-823,the wasp
+250,3-83,the fly
+251,3-831,the sandfly or midge or gnat
+252,3-832,the mosquito
+253,3-833,the prawns or shrimp
+254,3-834,the termites
+255,3-835,the tick
+256,3-84,the worm
+257,3-85,the snake
+258,3-862,the coyote
+259,3-863,the hare
+260,3-865,the quail
+261,3-866,the raccoon
+262,3-869,the squirrel
+263,3-871,the reindeer/caribou
+264,3-872,the elk/moose
+265,3-873,the beaver
+266,3-88,the kangaroo
+267,3-89,the anteater
+268,3-9,the jaguar
+269,3-91,the firefly
+270,3-913,the chameleon
+271,3-917,the buffalo
+272,3-92,the butterfly
+273,3-93,the grasshopper
+274,3-94,the snail
+275,3-95,the frog
+276,3-96,the lizard
+277,3-97,the crocodile or alligator
+278,3-98,the turtle
+279,3-99,the tapir
+280,h4,The body
+281,4-11,the body
+282,4-12,the skin or hide
+283,4-13,the flesh
+284,4-14,the hair
+285,4-142,the beard
+286,4-144,the body hair
+287,4-145,the pubic hair
+288,4-146,the dandruff
+289,4-15,the blood
+290,4-151,the vein or artery
+291,4-16,the bone
+292,4-162,the rib
+293,4-17,the horn
+294,4-18,the tail
+295,4-19,the back
+296,4-191,the spine
+297,4-2,the head
+298,4-201,the temples
+299,4-202,the skull
+300,4-203,the brain
+301,4-204,the face
+302,4-205,the forehead
+303,4-207,the jaw
+304,4-208,the cheek
+305,4-209,the chin
+306,4-21,the eye
+307,4-212,the eyebrow
+308,4-213,the eyelid
+309,4-214,the eyelash
+310,4-215,to blink
+311,4-22,the ear
+312,4-221,the earlobe
+313,4-222,the earwax
+314,4-23,the nose
+315,4-231,the nostril
+316,4-232,the nasal mucus
+317,4-24,the mouth
+318,4-241,the beak
+319,4-25,the lip
+320,4-26,the tongue
+321,4-27,the tooth
+322,4-271,the gums
+323,4-272,the molar tooth
+324,4-28,the neck
+325,4-281,the nape of the neck
+326,4-29,the throat
+327,4-3,the shoulder
+328,4-301,the shoulderblade
+329,4-302,the collarbone
+330,4-31,the arm
+331,4-312,the armpit
+332,4-32,the elbow
+333,4-321,the wrist
+334,4-33,the hand
+335,4-331,the palm of the hand
+336,4-34,the finger
+337,4-342,the thumb
+338,4-344,the fingernail
+339,4-345,the claw
+340,4-35,the leg
+341,4-351,the thigh
+342,4-352,the calf of the leg
+343,4-36,the knee
+344,4-37,the foot
+345,4-371,the ankle
+346,4-372,the heel
+347,4-374,the footprint
+348,4-38,the toe
+349,4-392,the wing
+350,4-393,the feather
+351,4-4,the chest
+352,4-41,the breast
+353,4-412,the nipple or teat
+354,4-42,the udder
+355,4-43,the navel
+356,4-431,the belly
+357,4-44,the heart
+358,4-441,the lung
+359,4-45,the liver
+360,4-451,the kidney
+361,4-452,the spleen
+362,4-46,the stomach
+363,4-461,the intestines or guts
+364,4-462,the waist
+365,4-463,the hip
+366,4-464,the buttocks
+367,4-465,the sinew or tendon
+368,4-47,the womb
+369,4-49,the testicles
+370,4-492,the penis
+371,4-493,the vagina
+372,4-494,the vulva
+373,4-51,to breathe
+374,4-52,to yawn
+375,4-521,to hiccough
+376,4-53,to cough
+377,4-54,to sneeze
+378,4-55,to perspire
+379,4-56,to spit
+380,4-57,to vomit
+381,4-58,to bite
+382,4-59,to lick
+383,4-591,to dribble
+384,4-61,to sleep
+385,4-612,to snore
+386,4-62,to dream
+387,4-63,to wake up
+388,4-64,to fart
+389,4-65,to piss
+390,4-66,to shit
+391,4-67,to have sex
+392,4-68,to shiver
+393,4-69,to bathe
+394,4-71,to beget
+395,4-72,to be born
+396,4-73,pregnant
+397,4-732,to conceive
+398,4-74,to be alive
+399,4-741,the life
+400,4-75,to die
+401,4-7501,dead
+402,4-751,to drown
+403,4-76,to kill
+404,4-77,the corpse
+405,4-771,the carcass
+406,4-78,to bury
+407,4-79,the grave
+408,4-81,strong
+409,4-82,weak
+410,4-83,healthy
+411,4-84,sick/ill
+412,4-841,the fever
+413,4-842,the goitre/goiter
+414,4-843,the cold
+415,4-844,the disease
+416,4-85,the wound or sore
+417,4-852,the bruise
+418,4-853,the swelling
+419,4-854,the itch
+420,4-8541,to scratch
+421,4-855,the blister
+422,4-856,the boil
+423,4-857,the pus
+424,4-858,the scar
+425,4-86,to cure
+426,4-87,the physician
+427,4-88,the medicine
+428,4-89,the poison
+429,4-91,tired
+430,4-912,to rest
+431,4-92,lazy
+432,4-93,bald
+433,4-94,lame
+434,4-95,deaf
+435,4-96,mute
+436,4-97,blind
+437,4-98,drunk
+438,4-99,naked
+439,h5,Food and drink
+440,5-11,to eat
+441,5-12,the food
+442,5-121,cooked
+443,5-122,raw
+444,5-123,ripe
+445,5-124,unripe
+446,5-125,rotten
+447,5-13,to drink
+448,5-14,to be hungry
+449,5-141,the famine
+450,5-15,to be thirsty
+451,5-16,to suck
+452,5-18,to chew
+453,5-181,to swallow
+454,5-19,to choke
+455,5-21,to cook
+456,5-22,to boil
+457,5-23,to roast or fry
+458,5-24,to bake
+459,5-25,the oven
+460,5-26,the pot
+461,5-27,the kettle
+462,5-28,the pan
+463,5-31,the dish
+464,5-32,the plate
+465,5-33,the bowl
+466,5-34,the jug/pitcher
+467,5-35,the cup
+468,5-36,the saucer
+469,5-37,the spoon
+470,5-38,the knife(1)
+471,5-39,the fork
+472,5-391,the tongs
+473,5-41,the meal
+474,5-42,the breakfast
+475,5-43,the lunch
+476,5-44,the dinner
+477,5-45,the supper
+478,5-46,to peel
+479,5-47,to sieve or to strain
+480,5-48,to scrape
+481,5-49,to stir or to mix
+482,5-51,the bread
+483,5-53,the dough
+484,5-54,to knead
+485,5-55,the flour
+486,5-56,to crush or to grind
+487,5-57,the mill
+488,5-58,the mortar(1)
+489,5-59,the pestle
+490,5-61,the meat
+491,5-63,the sausage
+492,5-64,the soup
+493,5-65,the vegetables
+494,5-66,the bean
+495,5-7,the potato
+496,5-71,the fruit
+497,5-712,the bunch
+498,5-75,the fig
+499,5-76,the grape
+500,5-77,the nut
+501,5-78,the olive
+502,5-79,the oil
+503,5-791,the grease or fat
+504,5-81,the salt
+505,5-82,the pepper
+506,5-821,the chili pepper
+507,5-84,the honey
+508,5-85,the sugar
+509,5-86,the milk
+510,5-87,to milk
+511,5-88,the cheese
+512,5-89,the butter
+513,5-9,the drink
+514,5-91,the mead
+515,5-92,the wine
+516,5-93,the beer
+517,5-94,the fermented drink
+518,5-97,the egg
+519,5-971,the yolk
+520,5-983,the manioc bread
+521,h6,Clothing and grooming
+522,6-11,to put on
+523,6-12,the clothing or clothes
+524,6-13,the tailor
+525,6-21,the cloth
+526,6-22,the wool
+527,6-23,the linen
+528,6-24,the cotton
+529,6-25,the silk
+530,6-27,the felt
+531,6-28,the fur
+532,6-29,the leather
+533,6-31,to spin
+534,6-32,the spindle
+535,6-33,to weave
+536,6-34,the loom
+537,6-35,to sew
+538,6-36,the needle(1)
+539,6-37,the awl
+540,6-38,the thread
+541,6-39,to dye
+542,6-41,the cloak
+543,6-411,the poncho
+544,6-42,the (woman's) dress
+545,6-43,the coat
+546,6-44,the shirt
+547,6-45,the collar
+548,6-46,the skirt
+549,6-461,the grass-skirt
+550,6-48,the trousers
+551,6-49,the sock or stocking
+552,6-51,the shoe
+553,6-52,the boot
+554,6-54,the shoemaker
+555,6-55,the hat or cap
+556,6-57,the belt
+557,6-58,the glove
+558,6-59,the veil
+559,6-61,the pocket
+560,6-62,the button
+561,6-63,the pin
+562,6-71,the ornament or adornment
+563,6-72,the jewel
+564,6-73,the ring
+565,6-74,the bracelet
+566,6-75,the necklace
+567,6-76,the bead
+568,6-77,the earring
+569,6-78,the headband or headdress
+570,6-79,the tattoo
+571,6-81,the handkerchief or rag
+572,6-82,the towel
+573,6-91,the comb
+574,6-92,the brush
+575,6-921,the plait/braid
+576,6-93,the razor
+577,6-94,the ointment
+578,6-95,the soap
+579,6-96,the mirror
+580,6-98,the snowshoe
+581,h7,The house
+582,7-11,to live
+583,7-12,the house
+584,7-13,the hut
+585,7-131,the garden-house
+586,7-14,the tent
+587,7-15,the yard or court
+588,7-16,the men's house
+589,7-17,the cookhouse
+590,7-18,the meeting house
+591,7-21,the room
+592,7-22,the door or gate
+593,7-221,the doorpost
+594,7-23,the lock
+595,7-231,the latch or door-bolt
+596,7-232,the padlock
+597,7-24,the key
+598,7-25,the window
+599,7-26,the floor
+600,7-27,the wall
+601,7-31,the fireplace
+602,7-32,the stove
+603,7-33,the chimney
+604,7-37,the ladder
+605,7-42,the bed
+606,7-421,the pillow
+607,7-422,the blanket
+608,7-43,the chair
+609,7-44,the table
+610,7-45,the lamp or torch
+611,7-46,the candle
+612,7-47,the shelf
+613,7-48,the trough
+614,7-51,the roof
+615,7-52,the thatch
+616,7-53,the ridgepole
+617,7-54,the rafter
+618,7-55,the beam
+619,7-56,the post or pole
+620,7-57,the board
+621,7-58,the arch
+622,7-61,the mason
+623,7-62,the brick
+624,7-63,the mortar(2)
+625,7-64,the adobe
+626,7-65,the camp
+627,7-66,the hammock
+628,7-67,to tan
+629,h8,Agriculture and vegetation
+630,8-11,the farmer
+631,8-12,the field
+632,8-121,the paddy
+633,8-13,the garden
+634,8-15,to cultivate
+635,8-16,the fence
+636,8-17,the ditch
+637,8-21,to plough/plow
+638,8-212,the furrow
+639,8-22,to dig
+640,8-23,the spade
+641,8-24,the shovel
+642,8-25,the hoe
+643,8-26,the fork(2)/pitchfork
+644,8-27,the rake
+645,8-28,the digging stick (=yamstick)
+646,8-29,the lasso
+647,8-31,to sow
+648,8-311,the seed
+649,8-32,to mow
+650,8-33,the sickle or scythe
+651,8-34,to thresh
+652,8-35,the threshing-floor
+653,8-41,the harvest
+654,8-42,the grain
+655,8-43,the wheat
+656,8-44,the barley
+657,8-45,the rye
+658,8-46,the oats
+659,8-47,the maize/corn
+660,8-48,the rice
+661,8-51,the grass
+662,8-52,the hay
+663,8-53,the plant
+664,8-531,to plant
+665,8-54,the root
+666,8-55,the branch
+667,8-56,the leaf
+668,8-57,the flower
+669,8-6,the tree
+670,8-61,the oak
+671,8-62,the beech
+672,8-63,the birch
+673,8-64,the pine
+674,8-65,the fir
+675,8-66,the acorn
+676,8-67,the vine
+677,8-68,the tobacco
+678,8-69,to smoke
+679,8-691,the pipe
+680,8-72,the tree stump
+681,8-73,the tree trunk
+682,8-74,the forked branch
+683,8-75,the bark
+684,8-76,the sap
+685,8-81,the palm tree
+686,8-82,the coconut
+687,8-83,the citrus fruit
+688,8-84,the banana
+689,8-85,the banyan
+690,8-91,the sweet potato
+691,8-911,the millet or sorghum
+692,8-912,the yam
+693,8-92,the cassava/manioc
+694,8-93,the gourd
+695,8-931,the pumpkin or squash
+696,8-94,the bamboo
+697,8-941,the sugar cane
+698,8-96,the fish poison
+699,8-97,the nettle
+700,8-98,the mushroom
+701,8-991,the larch
+702,8-993,the needle(2)
+703,8-996,the cone
+704,h9,Basic actions and technology
+705,9-11,to do
+706,9-111,to make
+707,9-12,the work
+708,9-14,to bend
+709,9-15,to fold
+710,9-16,to tie
+711,9-161,to untie
+712,9-18,the chain
+713,9-19,the rope
+714,9-192,the knot
+715,9-21,to strike or hit or beat
+716,9-211,to pound
+717,9-22,to cut
+718,9-221,to cut down
+719,9-222,to chop
+720,9-223,to stab
+721,9-23,the knife(2)
+722,9-24,the scissors or shears
+723,9-25,the axe/ax
+724,9-251,the adze
+725,9-26,to break
+726,9-261,broken
+727,9-27,to split
+728,9-28,to tear
+729,9-29,to skin
+730,9-31,to rub
+731,9-311,to wipe
+732,9-32,to stretch
+733,9-33,to pull
+734,9-34,to spread out
+735,9-341,to hang up
+736,9-342,to press
+737,9-343,to squeeze
+738,9-35,to pour
+739,9-36,to wash
+740,9-37,to sweep
+741,9-38,the broom
+742,9-422,the tool
+743,9-43,the carpenter
+744,9-44,to build
+745,9-46,to bore
+746,9-461,to hollow out
+747,9-48,the saw
+748,9-49,the hammer
+749,9-5,the nail
+750,9-56,the glue
+751,9-6,the blacksmith
+752,9-61,to forge
+753,9-62,the anvil
+754,9-63,to cast
+755,9-64,the gold
+756,9-65,the silver
+757,9-66,the copper
+758,9-67,the iron
+759,9-68,the lead
+760,9-69,the tin or tinplate
+761,9-71,the potter
+762,9-72,to mould/mold
+763,9-73,the clay
+764,9-74,the glass
+765,9-75,to weave or plait/braid
+766,9-76,the basket
+767,9-77,the mat
+768,9-771,the rug
+769,9-78,the netbag
+770,9-79,the fan
+771,9-791,to fan
+772,9-81,to carve
+773,9-82,the sculptor
+774,9-83,the statue
+775,9-84,the chisel
+776,9-87,the boomerang
+777,9-88,the paint
+778,9-89,to paint
+779,9-9,to draw water
+780,9-91,the peg
+781,9-92,the tumpline
+782,9-93,the whetstone
+783,h10,Motion
+784,10-11,to move
+785,10-12,to turn
+786,10-13,to turn around
+787,10-14,to wrap
+788,10-15,to roll
+789,10-16,to drop
+790,10-17,to twist
+791,10-21,to rise
+792,10-22,to raise or lift
+793,10-23,to fall
+794,10-24,to drip
+795,10-25,to throw
+796,10-252,to catch
+797,10-26,to shake
+798,10-32,to flow
+799,10-33,to sink
+800,10-34,to float
+801,10-35,to swim
+802,10-351,to dive
+803,10-352,to splash
+804,10-36,to sail
+805,10-37,to fly
+806,10-38,to blow
+807,10-41,to crawl
+808,10-412,to kneel
+809,10-413,to crouch
+810,10-42,to slide or slip
+811,10-43,to jump
+812,10-431,to kick
+813,10-44,to dance
+814,10-45,to walk
+815,10-451,to limp
+816,10-46,to run
+817,10-47,to go
+818,10-471,to go up
+819,10-472,to climb
+820,10-473,to go down
+821,10-474,to go out
+822,10-48,to come
+823,10-481,to come back
+824,10-49,to leave
+825,10-491,to disappear
+826,10-51,to flee
+827,10-52,to follow
+828,10-53,to pursue
+829,10-55,to arrive
+830,10-56,to approach
+831,10-57,to enter
+832,10-58,to go or return home
+833,10-61,to carry
+834,10-612,to carry in hand
+835,10-613,to carry on shoulder
+836,10-614,to carry on head
+837,10-615,to carry under the arm
+838,10-62,to bring
+839,10-63,to send
+840,10-64,to lead
+841,10-65,to drive
+842,10-66,to ride
+843,10-67,to push
+844,10-71,the road
+845,10-72,the path
+846,10-74,the bridge
+847,10-75,the cart or wagon
+848,10-76,the wheel
+849,10-77,the axle
+850,10-78,the yoke
+851,10-79,the sledge/sled
+852,10-81,the ship
+853,10-83,the boat
+854,10-831,the canoe
+855,10-832,the outrigger
+856,10-84,the raft
+857,10-85,the oar
+858,10-851,the paddle
+859,10-852,to row
+860,10-86,the rudder
+861,10-87,the mast
+862,10-88,the sail
+863,10-89,the anchor
+864,10-91,the port
+865,10-92,to land
+866,h11,Possession
+867,11-11,to have
+868,11-12,to own
+869,11-13,to take
+870,11-14,to grasp
+871,11-15,to hold
+872,11-16,to get
+873,11-17,to keep
+874,11-18,the thing
+875,11-21,to give
+876,11-22,to give back
+877,11-24,to preserve
+878,11-25,to rescue
+879,11-27,to destroy
+880,11-28,to injure
+881,11-29,to damage
+882,11-31,to look for
+883,11-32,to find
+884,11-33,to lose
+885,11-34,to let go
+886,11-43,the money
+887,11-44,the coin
+888,11-51,rich
+889,11-52,poor
+890,11-53,the beggar
+891,11-54,stingy
+892,11-61,to lend
+893,11-62,to borrow
+894,11-63,to owe
+895,11-64,the debt
+896,11-65,to pay
+897,11-66,the bill
+898,11-69,the tax
+899,11-77,to hire
+900,11-78,the wages
+901,11-79,to earn
+902,11-81,to buy
+903,11-82,to sell
+904,11-83,to trade or barter
+905,11-84,the merchant
+906,11-85,the market
+907,11-86,the shop/store
+908,11-87,the price
+909,11-88,expensive
+910,11-89,cheap
+911,11-91,to share
+912,11-92,to weigh
+913,h12,Spatial relations
+914,12-01,after
+915,12-011,behind
+916,12-012,in
+917,12-013,at
+918,12-02,beside
+919,12-03,down
+920,12-04,before
+921,12-041,in front of
+922,12-05,inside
+923,12-06,outside
+924,12-07,under
+925,12-08,up
+926,12-081,above
+927,12-11,the place
+928,12-12,to put
+929,12-13,to sit
+930,12-14,to lie down
+931,12-15,to stand
+932,12-16,to remain
+933,12-17,the remains
+934,12-21,to gather
+935,12-212,to pick up
+936,12-213,to pile up
+937,12-22,to join
+938,12-23,to separate
+939,12-232,to divide
+940,12-24,to open
+941,12-25,to shut
+942,12-26,to cover
+943,12-27,to hide
+944,12-31,high
+945,12-32,low
+946,12-33,the top
+947,12-34,the bottom
+948,12-35,the end(1)
+949,12-352,pointed
+950,12-353,the edge
+951,12-36,the side
+952,12-37,the middle
+953,12-41,right(1)
+954,12-42,left
+955,12-43,near
+956,12-44,far
+957,12-45,the east
+958,12-46,the west
+959,12-47,the north
+960,12-48,the south
+961,12-53,to grow
+962,12-54,to measure
+963,12-541,the fathom
+964,12-55,big
+965,12-56,small
+966,12-57,long
+967,12-58,tall
+968,12-59,short
+969,12-61,wide
+970,12-62,narrow
+971,12-63,thick
+972,12-65,thin
+973,12-67,deep
+974,12-68,shallow
+975,12-71,flat
+976,12-73,straight
+977,12-74,crooked
+978,12-75,the hook
+979,12-76,the corner
+980,12-77,the cross
+981,12-78,the square
+982,12-81,round
+983,12-82,the circle
+984,12-83,the ball
+985,12-84,the line
+986,12-85,the hole
+987,12-92,similar
+988,12-93,to change
+989,h13,Quantity
+990,13,zero
+991,13-01,one
+992,13-02,two
+993,13-03,three
+994,13-04,four
+995,13-05,five
+996,13-06,six
+997,13-07,seven
+998,13-08,eight
+999,13-09,nine
+1000,13-1,ten
+1001,13-101,eleven
+1002,13-102,twelve
+1003,13-103,fifteen
+1004,13-104,twenty
+1005,13-105,a hundred
+1006,13-106,a thousand
+1007,13-107,to count
+1008,13-14,all
+1009,13-15,many
+1010,13-16,more
+1011,13-17,few
+1012,13-18,enough
+1013,13-181,some
+1014,13-19,the crowd
+1015,13-21,full
+1016,13-22,empty
+1017,13-23,the part
+1018,13-231,the piece
+1019,13-24,the half
+1020,13-33,only
+1021,13-331,alone
+1022,13-34,first
+1023,13-35,last
+1024,13-36,second
+1025,13-37,the pair
+1026,13-38,twice/two times
+1027,13-42,third
+1028,13-44,three times
+1029,h14,Time
+1030,14-11,the time
+1031,14-12,the age
+1032,14-13,new
+1033,14-14,young
+1034,14-15,old
+1035,14-16,early
+1036,14-17,late
+1037,14-18,now
+1038,14-19,immediately
+1039,14-21,fast
+1040,14-22,slow
+1041,14-23,to hurry
+1042,14-24,to be late
+1043,14-25,to begin
+1044,14-251,the beginning
+1045,14-252,to last
+1046,14-26,the end(2)
+1047,14-27,to finish
+1048,14-28,to cease
+1049,14-29,ready
+1050,14-31,always
+1051,14-32,often
+1052,14-33,sometimes
+1053,14-331,soon
+1054,14-332,for a long time
+1055,14-34,never
+1056,14-35,again
+1057,14-41,the day(1)
+1058,14-411,the day(2)
+1059,14-42,the night
+1060,14-43,the dawn
+1061,14-44,the morning
+1062,14-45,the midday
+1063,14-451,the afternoon
+1064,14-46,the evening
+1065,14-47,today
+1066,14-48,tomorrow
+1067,14-481,the day after tomorrow
+1068,14-49,yesterday
+1069,14-491,the day before yesterday
+1070,14-51,the hour
+1071,14-53,the clock
+1072,14-61,the week
+1073,14-62,Sunday
+1074,14-63,Monday
+1075,14-64,Tuesday
+1076,14-65,Wednesday
+1077,14-66,Thursday
+1078,14-67,Friday
+1079,14-68,Saturday
+1080,14-71,the month
+1081,14-73,the year
+1082,14-74,the winter
+1083,14-75,the spring(2)
+1084,14-76,the summer
+1085,14-77,the autumn/fall
+1086,14-78,the season
+1087,h15,Sense perception
+1088,15-21,to smell(1)
+1089,15-212,to sniff
+1090,15-22,to smell(2)
+1091,15-25,fragrant
+1092,15-26,stinking
+1093,15-31,to taste
+1094,15-35,sweet
+1095,15-36,salty
+1096,15-37,bitter
+1097,15-38,sour
+1098,15-39,brackish
+1099,15-41,to hear
+1100,15-42,to listen
+1101,15-44,the sound or noise
+1102,15-45,loud
+1103,15-46,quiet
+1104,15-51,to see
+1105,15-52,to look
+1106,15-55,to show
+1107,15-56,to shine
+1108,15-57,bright
+1109,15-61,the colour/color
+1110,15-62,light(2)
+1111,15-63,dark
+1112,15-64,white
+1113,15-65,black
+1114,15-66,red
+1115,15-67,blue
+1116,15-68,green
+1117,15-69,yellow
+1118,15-71,to touch
+1119,15-712,to pinch
+1120,15-72,to feel
+1121,15-74,hard
+1122,15-75,soft
+1123,15-76,rough(1)
+1124,15-77,smooth
+1125,15-78,sharp
+1126,15-79,blunt
+1127,15-81,heavy
+1128,15-82,light(1)
+1129,15-83,wet
+1130,15-84,dry
+1131,15-85,hot
+1132,15-851,warm
+1133,15-86,cold
+1134,15-87,clean
+1135,15-88,dirty
+1136,15-89,wrinkled
+1137,h16,Emotions and values
+1138,16-11,the soul or spirit
+1139,16-15,surprised or astonished
+1140,16-18,the good luck
+1141,16-19,the bad luck
+1142,16-23,happy
+1143,16-25,to laugh
+1144,16-251,to smile
+1145,16-26,to play
+1146,16-27,to love
+1147,16-29,to kiss
+1148,16-3,to embrace
+1149,16-31,the pain
+1150,16-32,the grief
+1151,16-33,the anxiety
+1152,16-34,to regret or be sorry
+1153,16-35,the pity
+1154,16-37,to cry
+1155,16-38,the tear
+1156,16-39,to groan
+1157,16-41,to hate
+1158,16-42,the anger
+1159,16-44,the envy or jealousy
+1160,16-45,the shame
+1161,16-48,proud
+1162,16-51,to dare
+1163,16-52,brave
+1164,16-53,the fear
+1165,16-54,the danger
+1166,16-62,to want
+1167,16-622,to choose
+1168,16-63,to hope
+1169,16-65,faithful
+1170,16-66,true
+1171,16-67,to lie(2)
+1172,16-68,the deceit
+1173,16-69,to forgive
+1174,16-71,good
+1175,16-72,bad
+1176,16-73,right(2)
+1177,16-74,wrong
+1178,16-76,the fault
+1179,16-77,the mistake
+1180,16-78,the blame
+1181,16-79,the praise
+1182,16-81,beautiful
+1183,16-82,ugly
+1184,16-83,greedy
+1185,16-84,clever
+1186,h17,Cognition
+1187,17-11,the mind
+1188,17-13,to think(1)
+1189,17-14,to think(2)
+1190,17-15,to believe
+1191,17-16,to understand
+1192,17-17,to know
+1193,17-171,to guess
+1194,17-172,to imitate
+1195,17-18,to seem
+1196,17-19,the idea
+1197,17-21,wise
+1198,17-22,stupid
+1199,17-23,mad
+1200,17-24,to learn
+1201,17-242,to study
+1202,17-25,to teach
+1203,17-26,the pupil
+1204,17-27,the teacher
+1205,17-28,the school
+1206,17-31,to remember
+1207,17-32,to forget
+1208,17-34,clear
+1209,17-35,obscure
+1210,17-36,secret
+1211,17-37,certain
+1212,17-38,to explain
+1213,17-41,the intention
+1214,17-42,the cause
+1215,17-43,the doubt
+1216,17-44,to suspect
+1217,17-441,to betray
+1218,17-45,the need or necessity
+1219,17-46,easy
+1220,17-47,difficult
+1221,17-48,to try
+1222,17-49,the manner
+1223,17-51,and
+1224,17-52,because
+1225,17-53,if
+1226,17-54,or
+1227,17-55,yes
+1228,17-56,no
+1229,17-61,how?
+1230,17-62,how many?
+1231,17-63,how much?
+1232,17-64,what?
+1233,17-65,when?
+1234,17-66,where?
+1235,17-67,which?
+1236,17-68,who?
+1237,17-69,why?
+1238,h18,Speech and language
+1239,18-11,the voice
+1240,18-12,to sing
+1241,18-13,to shout
+1242,18-15,to whisper
+1243,18-16,to mumble
+1244,18-17,to whistle
+1245,18-18,to shriek
+1246,18-19,to howl
+1247,18-21,to speak or talk
+1248,18-211,to stutter or stammer
+1249,18-22,to say
+1250,18-221,to tell
+1251,18-222,the speech
+1252,18-23,to be silent
+1253,18-24,the language
+1254,18-26,the word
+1255,18-28,the name
+1256,18-31,to ask(1)
+1257,18-32,to answer
+1258,18-33,to admit
+1259,18-34,to deny
+1260,18-35,to ask(2)
+1261,18-36,to promise
+1262,18-37,to refuse
+1263,18-38,to forbid
+1264,18-39,to scold
+1265,18-41,to call(1)
+1266,18-42,to call(2)
+1267,18-43,to announce
+1268,18-44,to threaten
+1269,18-45,to boast
+1270,18-51,to write
+1271,18-52,to read
+1272,18-56,the paper
+1273,18-57,the pen
+1274,18-61,the book
+1275,18-67,the poet
+1276,18-71,the flute
+1277,18-72,the drum
+1278,18-73,the horn or trumpet
+1279,18-74,the rattle
+1280,h19,Social and political relations
+1281,19-11,the country
+1282,19-12,the native country
+1283,19-15,the town
+1284,19-16,the village
+1285,19-17,the boundary
+1286,19-21,the people
+1287,19-23,the clan
+1288,19-24,the chieftain
+1289,19-25,the walking stick
+1290,19-31,to rule or govern
+1291,19-32,the king
+1292,19-33,the queen
+1293,19-36,the noble
+1294,19-37,the citizen
+1295,19-41,the master
+1296,19-42,the slave
+1297,19-43,the servant
+1298,19-44,the freeman
+1299,19-445,to liberate
+1300,19-45,to command or order
+1301,19-46,to obey
+1302,19-47,to permit
+1303,19-51,the friend
+1304,19-52,the enemy
+1305,19-54,the neighbour
+1306,19-55,the stranger
+1307,19-56,the guest
+1308,19-565,to invite
+1309,19-57,the host
+1310,19-58,to help
+1311,19-59,to prevent
+1312,19-61,the custom
+1313,19-62,the quarrel
+1314,19-63,the plot
+1315,19-65,to meet
+1316,19-72,the prostitute
+1317,h20,Warfare and hunting
+1318,20-11,to fight
+1319,20-13,the war or battle
+1320,20-14,the peace
+1321,20-15,the army
+1322,20-17,the soldier
+1323,20-21,the weapons
+1324,20-22,the club
+1325,20-222,the battle-axe
+1326,20-23,the sling
+1327,20-24,the bow
+1328,20-25,the arrow
+1329,20-26,the spear
+1330,20-27,the sword
+1331,20-28,the gun
+1332,20-31,the armour
+1333,20-33,the helmet
+1334,20-34,the shield
+1335,20-35,the fortress
+1336,20-36,the tower
+1337,20-41,the victory
+1338,20-42,the defeat
+1339,20-43,the attack
+1340,20-44,to defend
+1341,20-45,to retreat
+1342,20-46,to surrender
+1343,20-47,the captive or prisoner
+1344,20-471,the guard
+1345,20-48,the booty
+1346,20-49,the ambush
+1347,20-51,the fisherman
+1348,20-52,the fishhook
+1349,20-53,the fishing line
+1350,20-54,the fishnet
+1351,20-55,the fish trap
+1352,20-56,the bait
+1353,20-61,to hunt
+1354,20-62,to shoot
+1355,20-63,to miss
+1356,20-64,the trap
+1357,20-65,to trap
+1358,h21,Law
+1359,21-11,the law
+1360,21-15,the court
+1361,21-16,to adjudicate
+1362,21-17,the judgment
+1363,21-18,the judge
+1364,21-21,the plaintiff
+1365,21-22,the defendant
+1366,21-23,the witness
+1367,21-24,to swear
+1368,21-25,the oath
+1369,21-31,to accuse
+1370,21-32,to condemn
+1371,21-33,to convict
+1372,21-34,to acquit
+1373,21-35,guilty
+1374,21-36,innocent
+1375,21-37,the penalty or punishment
+1376,21-38,the fine
+1377,21-39,the prison
+1378,21-42,the murder
+1379,21-43,the adultery
+1380,21-44,the rape
+1381,21-46,the arson
+1382,21-47,the perjury
+1383,21-51,to steal
+1384,21-52,the thief
+1385,h22,Religion and belief
+1386,22-11,the religion
+1387,22-12,the god
+1388,22-13,the temple
+1389,22-131,the church
+1390,22-132,the mosque
+1391,22-14,the altar
+1392,22-15,the sacrifice
+1393,22-16,to worship
+1394,22-17,to pray
+1395,22-18,the priest
+1396,22-19,holy
+1397,22-22,to preach
+1398,22-23,to bless
+1399,22-24,to curse
+1400,22-26,to fast
+1401,22-31,the heaven
+1402,22-32,the hell
+1403,22-35,the demon
+1404,22-37,the idol
+1405,22-42,the magic
+1406,22-43,the sorcerer or witch
+1407,22-44,the fairy or elf
+1408,22-45,the ghost
+1409,22-47,the omen
+1410,22-5,the circumcision
+1411,22-51,the initiation ceremony
+1412,h23,Modern world
+1413,23-1,the radio
+1414,23-11,the television
+1415,23-12,the telephone
+1416,23-13,the bicycle
+1417,23-135,the motorcycle
+1418,23-14,the car
+1419,23-15,the bus
+1420,23-155,the train
+1421,23-16,the airplane
+1422,23-17,the electricity
+1423,23-175,the battery
+1424,23-18,to brake
+1425,23-185,the motor
+1426,23-19,the machine
+1427,23-195,the petroleum
+1428,23-2,the hospital
+1429,23-21,the nurse
+1430,23-22,the pill or tablet
+1431,23-23,the injection
+1432,23-24,the spectacles/glasses
+1433,23-3,the government
+1434,23-31,the president
+1435,23-32,the minister
+1436,23-33,the police
+1437,23-34,the driver's license
+1438,23-35,the license plate
+1439,23-36,the birth certificate
+1440,23-37,the crime
+1441,23-38,the election
+1442,23-385,the address
+1443,23-39,the number
+1444,23-395,the street
+1445,23-4,the post/mail
+1446,23-41,the postage stamp
+1447,23-42,the letter
+1448,23-43,the postcard
+1449,23-44,the bank
+1450,23-5,the tap/faucet
+1451,23-51,the sink
+1452,23-52,the toilet
+1453,23-53,the mattress
+1454,23-54,the tin/can
+1455,23-55,the screw
+1456,23-555,the screwdriver
+1457,23-56,the bottle
+1458,23-565,the candy/sweets
+1459,23-57,the plastic
+1460,23-575,the bomb
+1461,23-58,the workshop
+1462,23-59,the cigarette
+1463,23-6,the newspaper
+1464,23-61,the calendar
+1465,23-62,the film/movie
+1466,23-63,the music
+1467,23-64,the song
+1468,23-9,the tea
+1469,23-91,the coffee
+1470,h24,Miscellaneous function words
+1471,24-01,to be
+1472,24-02,to become
+1473,24-03,without
+1474,24-04,with
+1475,24-05,through
+1476,24-06,not
+1477,24-07,this
+1478,24-08,that
+1479,24-09,here
+1480,24-1,there
+1481,24-11,other
+1482,24-12,next
+1483,24-13,same
+1484,24-14,nothing

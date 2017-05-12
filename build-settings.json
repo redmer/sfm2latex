@@ -1,0 +1,29 @@
+{
+    "lang_vernacular": "qul",
+    "lang_regional": "es",
+    "pos_stem_affix" : {
+        "v": "y",
+        "amb": "(y)"
+    },
+    "inherited": {
+        "merit": [
+            "PQue", 
+            "PQueAym", 
+            "Que",
+            "SQue"
+        ],
+        "demerit": [
+            "Sp",
+            "Uch",
+            "Aym",
+            " ",
+            "Paym",
+            "CENAQ"
+        ]
+    },
+    "wordlists": {
+        "\\ht": "data/haspelmath-tadmor-2009.csv"
+    },
+    "glosses": "data/glossing-abbreviations.csv",
+    "headings": "data/language-headings.json"
+}
