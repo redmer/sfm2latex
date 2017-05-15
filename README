@@ -1,11 +1,3 @@
----
-authors:
-	redmer:
-		name: Redmer Kronemeijer
-		github: https:/github.com/redmer
-		twitter: https:/twitter.com/redmer
-		homepage: https:/rdmr.eu/
----
 # SFM to LaTeX
 
 This set of Python scripts generates LaTeX files from [SIL's Toolbox](http://www-01.sil.org/computing/toolbox/) SFM files. Licenced under MIT. 
