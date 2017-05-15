@@ -18,6 +18,9 @@ This set of Python scripts generates LaTeX files from [SIL's Toolbox](http://www
 - `lualatex`
 	- Other LaTeX compilers have not been tested, but will probably work. 
 
+# Other sources
+- `data/wordlist-haspelmath-tadmor-2009.csv` is taken from *WOLD* edited by Haspelmath, Martin & Tadmor, Uri is licensed under a Creative Commons Attribution 3.0 Germany License. 
+
 # Use
 
 ```$ python3 sfm2latex --dictionary Dictionary.txt --corpus Texts.txt```
