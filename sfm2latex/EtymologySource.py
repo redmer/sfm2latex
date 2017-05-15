@@ -14,7 +14,7 @@ class EtymologySource(object):
     }
 
     sourcedict = {
-        'CENAQ': '\CENAQ'
+        'CENAQ': '\CENAQ{}'
     }
 
     def __init__(self, lang, cert, value):

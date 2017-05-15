@@ -185,7 +185,7 @@ def items_in_file(in_file):
             if item.parts_of_speech[-1].pos[0] == 'v':
                 suffix = '-'  # y
             elif item.parts_of_speech[-1].pos == 'amb':
-                suffix = '⌐'  # (y)
+                suffix = '='  # (y)
             else:
                 suffix = ''
 

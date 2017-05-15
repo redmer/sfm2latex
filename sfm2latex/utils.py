@@ -17,6 +17,7 @@ def sortkey(foreign_word):
         .replace('¡', '') \
         .replace('(', '') \
         .replace(')', '') \
+        .replace('=', '') \
         .replace('-', '') \
         .replace('ch', 'cπ')
 
