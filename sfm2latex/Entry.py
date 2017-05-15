@@ -48,7 +48,7 @@ class Entry(object):
 
         def render_parts_of_speech():
             prefix = [] if len(self.parts_of_speech) > 1 else []
-            return r'\\*'.join(prefix + [x.render() for x in self.parts_of_speech])
+            return r'\\'.join(prefix + [x.render() for x in self.parts_of_speech])
 
         def render_cfs():
             return ', '.join([hyperref_to(x) for x in self.cfs])

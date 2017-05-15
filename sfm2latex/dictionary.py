@@ -209,33 +209,36 @@ def reverse_index(lexemes):
 
     for item in lexemes:
         if item.type == 'entry':
-            for meaning in item.parts_of_speech:
-                for sense in meaning.senses:
-                    index_term_english = sense.re if len(sense.re) else sense.de
-                    index_term_national = sense.rn if len(sense.rn) else sense.dn
-                    suffix = Entry.LX_WORD_INHERITED_SYMBOL if item.inherited > 0 else Entry.LX_WORD_LOAN_SYMBOL
-                    target = item.hw + suffix
+            if item.hw[0:1] == '-':
+                continue
+            else:
+                for meaning in item.parts_of_speech:
+                    for sense in meaning.senses:
+                        index_term_english = sense.re if len(sense.re) else sense.de
+                        index_term_national = sense.rn if len(sense.rn) else sense.dn
+                        suffix = Entry.LX_WORD_INHERITED_SYMBOL if item.inherited > 0 else Entry.LX_WORD_LOAN_SYMBOL
+                        target = item.hw + suffix
 
-                    for english_entry in index_term_english:
-                        if english_entry.startswith(r' \textsc{'):
-                            continue  # this is a gloss
+                        for english_entry in index_term_english:
+                            if english_entry.startswith(' \\'):
+                                break  # this is a gloss
 
-                        if english_entry in dict_english:
-                            dict_english[english_entry].append(target)
-                        else:
-                            dict_english[english_entry] = [target]
+                            if english_entry in dict_english:
+                                dict_english[english_entry].append(target)
+                            else:
+                                dict_english[english_entry] = [target]
 
-                    for national_entry in index_term_national:
-                        if national_entry in dict_national:
-                            dict_national[national_entry].append(target)
-                        else:
-                            dict_national[national_entry] = [target]
+                        for national_entry in index_term_national:
+                            if national_entry in dict_national:
+                                dict_national[national_entry].append(target)
+                            else:
+                                dict_national[national_entry] = [target]
 
-                    for ht in sense.ht:
-                        if ht in dict_ht:
-                            dict_ht[ht].append(target)
-                        elif len(ht):
-                            dict_ht[ht] = [target]
+                        for ht in sense.ht:
+                            if ht in dict_ht:
+                                dict_ht[ht].append(target)
+                            elif len(ht):
+                                dict_ht[ht] = [target]
 
     output_index_national = list()
     output_index_english = list()
@@ -322,7 +325,7 @@ def build(input_filename, settings={}):
 
 
 def search_reverse_index_for_common_prefixes(complete_reverse_list):
-    return complete_reverse_list  # added as a paper-saving measure
+    # return complete_reverse_list  # added as a paper-saving measure
 
     items_that_need_heading_term = []
 

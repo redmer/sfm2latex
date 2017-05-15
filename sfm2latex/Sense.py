@@ -30,6 +30,8 @@ class Sense(object):
                 if ',' in self.de[0]:
                     first_part, second_part = self.de[0].split(',', 1)
                     self.de[0] = r'\textbf<' + capitalize_first(first_part.strip()) + r'>, ' + second_part.strip()
+                elif self.de[0][0:2] == ' \\':
+                    self.de += [self.de.pop(0).strip()]
                 else:
                     self.de[0] = r'\textbf<' + capitalize_first(self.de[0].strip()) + r'>'
 
