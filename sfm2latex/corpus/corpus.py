@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import os
 
 from ..SFMFile import File
@@ -7,55 +5,49 @@ from ..utils import fix_orthography
 from .Example import Example
 
 
-def collect_glosses(read_file):
-    glosses = list()
-    current_example = None
+def collect_examples(read_file):
+    examples = list()
+    current = None
 
     for mark, value in File(read_file):
+        # Reference
         if 'ref' == mark:  # we have a new example
-            if current_example is not None:
-                glosses.append(current_example)
+            if current is not None:
+                examples.append(current)
 
-            current_example = Example(value)
+            current = Example(value)
 
-        if 'tx' == mark:
-            current_example.tx = value
-
+        # Morpheme boundaries (per word)
         elif 'mb' == mark:
-            current_example.mb = value
+            current.mb = value
 
+        # Gloss English (per word)
         elif 'ge' == mark:
-            current_example.ge = value
+            current.ge = value
 
-        elif 'ps' == mark:
-            current_example.ps = value
-
+        # Free translation (English)
         elif 'ft' == mark:
-            current_example.ft = value
+            current.ft = value
 
+        # Free comment
         elif 'cmt' == mark:
-            current_example.cmt = value
+            current.cmt = value
 
-        elif 'ftn' == mark:
-            current_example.ftn = value
-
-    return glosses
+    return examples
 
 
-def render(index):
+def render(index, settings={}):
     output = ''
 
     for item in index:
-        output += item.render() + '\n'
+        output += item.render(settings) + '\n'
 
     return output
 
 
 def build(input_filename, settings={}):
-    in_file = open(input_filename)
-
     # Get the lexemes from the SFM file
-    examples = collect_glosses(in_file)
+    examples = collect_examples(input_filename)
 
     # layout: {'aa' :  {001, 002, ...}, 'ab': {001, 002, ...}, ... }
     export = dict()
@@ -75,5 +67,5 @@ def build(input_filename, settings={}):
 
             os.makedirs(os.path.dirname(target_file), exist_ok=True)
             out_file = open(target_file, 'w+')
-            out_file.write(example.render())
+            out_file.write(example.render(settings))
             out_file.close()

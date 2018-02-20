@@ -11,17 +11,15 @@ TEX_GLOSS_ENVIRONMENT = r'''\ex~\begingl
 
 
 class Example(object):
+    """Represent a single example sentence from a Texts.txt file."""
     type = 'example'
 
     def __init__(self, reference_key):
         super().__init__()
         self.ref = reference_key
-        self.tx = ''
         self.mb = ''
         self.ge = ''
-        self.ps = ''
         self.ft = ''
-        self.ftn = ''
         self.cmt = ''
 
         # We need to strip off whitespace *before* bound morphemes
