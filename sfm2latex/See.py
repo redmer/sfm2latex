@@ -1,4 +1,5 @@
-from .utils import sortkey, hyperref_to
+from .utils import sortkey
+from .Latex import ref
 
 LX_SEE_TEX_TEMPLATE = r'\hwsee{{{alternative}}}{{{headword}}}[{desc}]'
 LX_SEE_SUBORDINATE_TEX_TEMPLATE = r'\hwseesubord{{{alternative}}}{{{headword}}}[{desc}]'
@@ -38,5 +39,5 @@ class See(object):
 
         return template.format(
             alternative=render_alternative(),
-            headword=', '.join([hyperref_to(x) for x in self.instead_look_at]),
+            headword=', '.join([ref(x) for x in self.instead_look_at]),
             desc='').replace('&lt;', '<').replace('&gt;', '>')

@@ -14,7 +14,7 @@ from .See import See
 from .EtymologySource import EtymologySource
 from .Sense import Sense
 from .WordlistItem import WordlistItem
-from .utils import make_orthography
+from .utils import fix_orthography
 
 # We use a Unicode collator, best sorting algorithm
 c = Collator()
@@ -68,7 +68,7 @@ def items_in_file(in_file):
             # print('Skipped\t' + marker + '\t' + markervalue)
             continue
 
-        markervalue = make_orthography(markervalue)
+        markervalue = fix_orthography(markervalue)
 
         if r'\lx' == marker:  # we have a new word
             skip_until_next_lx = False

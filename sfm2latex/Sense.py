@@ -1,4 +1,6 @@
-from .utils import capitalize_first, hyperref_to
+from .utils import capitalize_first
+from .Latex import ref
+
 
 class Sense(object):
     type = 'sense'
@@ -29,11 +31,14 @@ class Sense(object):
             try:
                 if ',' in self.de[0]:
                     first_part, second_part = self.de[0].split(',', 1)
-                    self.de[0] = r'\textbf<' + capitalize_first(first_part.strip()) + r'>, ' + second_part.strip()
+                    self.de[0] = r'\textbf<' + \
+                        capitalize_first(first_part.strip()) + \
+                        r'>, ' + second_part.strip()
                 elif self.de[0][0:2] == ' \\':
                     self.de += [self.de.pop(0).strip()]
                 else:
-                    self.de[0] = r'\textbf<' + capitalize_first(self.de[0].strip()) + r'>'
+                    self.de[0] = r'\textbf<' + \
+                        capitalize_first(self.de[0].strip()) + r'>'
 
                 return ', '.join(self.de)
             except IndexError as e:
@@ -50,7 +55,7 @@ class Sense(object):
             return self.nt.strip()  # (self.nt + ' ') if len(self.nt) else ''
 
         def render_ht():
-            return ', '.join([hyperref_to(x) for x in self.ht]) if len(self.ht) else ''
+            return ', '.join([ref(x) for x in self.ht]) if len(self.ht) else ''
 
         return r'\hwsense<{english}. {national}>[{linnaeus}][{nt}][{ht}]'.format(
             english=capitalize_first(render_english()),

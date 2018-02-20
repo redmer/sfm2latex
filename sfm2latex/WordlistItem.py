@@ -1,4 +1,4 @@
-from .utils import make_label, hyperref_to
+from .Latex import label, ref
 
 LX_SEE_TEX_TEMPLATE = r'\hwsee{{{alternative}}}{{{headword}}}[{desc}]'
 
@@ -24,6 +24,6 @@ class WordlistItem(object):
 
     def render(self):
         return LX_SEE_TEX_TEMPLATE.format(
-            alternative=make_label(self.ht_code) + self.ht_code,
-            headword=", ".join([hyperref_to(x) for x in self.instead_look_at]),
+            alternative=label(self.ht_code) + self.ht_code,
+            headword=", ".join([ref(x) for x in self.instead_look_at]),
             desc=self.desc)

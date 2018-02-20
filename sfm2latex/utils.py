@@ -1,9 +1,5 @@
 import sys
 
-TEX_LABEL_TEMPLATE = r'zz-LABEL'
-TEX_LABEL_COMMAND = r'\label{REF_TARGET}'
-TEX_REF_COMMAND = r'\hyperref[REF_TARGET]{REF_FROM}'
-
 
 def sortkey(foreign_word):
     """
@@ -43,30 +39,6 @@ def sortkey(foreign_word):
     return foreign_word.lower()
 
 
-def hyperref_to(word):
-    """
-    Generates a LaTeX `hyperref` reference to a word. 
-    
-    The hyperref command can be changed by redefining TEX_REF_COMMAND. 
-    """
-    return TEX_REF_COMMAND.replace(
-        'REF_TARGET', TEX_LABEL_TEMPLATE.replace(
-            'LABEL', sortkey(word)
-        )).replace(
-        'REF_FROM', word
-    )
-
-
-def make_label(word):
-    """
-    Generates a label for a word (item). 
-    """
-    return TEX_LABEL_COMMAND.replace(
-        'REF_TARGET', TEX_LABEL_TEMPLATE.replace(
-            'LABEL', sortkey(word)
-        ))
-
-
 def capitalize_first(x):
     """
     This function upper-cases only the first letter, unlike
@@ -78,9 +50,11 @@ def capitalize_first(x):
 
 TEX_GLOSS_REPL = list()
 
-def make_orthography(input):
+
+def fix_orthography(input):
     return input.replace('ꝗ', r'q̄') \
                 .replace('ꝁ', r'ḵ')
+
 
 def escape_for_latex(string):
     string = string.replace('\\', r'\textbackslash{}')

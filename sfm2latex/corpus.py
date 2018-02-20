@@ -2,7 +2,8 @@
 
 import os
 from .Gloss import Gloss
-from .utils import make_orthography
+from .utils import fix_orthography
+
 
 def glosses_in_file(read_file):
     glosses = list()
@@ -17,7 +18,7 @@ def glosses_in_file(read_file):
         except ValueError:
             continue  # with the iteration
 
-        markervalue = make_orthography(markervalue)
+        markervalue = fix_orthography(markervalue)
 
         if r'\ref' == marker:  # we have a new example
             if current_example is not None:
@@ -64,7 +65,8 @@ def build(input_filename, settings={}):
     # Get the lexemes from the SFM file
     examples = glosses_in_file(in_file)
 
-    export = dict()  # layout: {'aa' :  {001, 002, ...}, 'ab': {001, 002, ...}, ... }
+    # layout: {'aa' :  {001, 002, ...}, 'ab': {001, 002, ...}, ... }
+    export = dict()
 
     for e in examples:
         if e.major() not in export:
