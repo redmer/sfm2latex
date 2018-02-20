@@ -387,7 +387,7 @@ def load_ht_file():
     try:
         definition_file = open(HT_FILE_NAME, 'r')
     except FileNotFoundError:
-        print('File "ht-original.csv" is missing. Please re-download it from <https://github.com/redmer/sfm2tex/>.')
+        print(f'File "{HT_FILE_NAME}" is missing. Please re-download it from <https://github.com/redmer/sfm2tex/>.')
         sys.exit(2)
 
     for line in definition_file.read().splitlines():
