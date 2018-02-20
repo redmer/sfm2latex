@@ -22,7 +22,7 @@ class WordlistItem(object):
             instead_look_at=', '.join(self.instead_look_at)
         )
 
-    def render(self):
+    def render(self, settings={}):
         return LX_SEE_TEX_TEMPLATE.format(
             alternative=label(self.ht_code) + self.ht_code,
             headword=", ".join([ref(x) for x in self.instead_look_at]),

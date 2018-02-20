@@ -31,7 +31,7 @@ class See(object):
         self.sort_as_vernacular = sort_as_vernacular
         self.is_subordinate = is_subordinate
 
-    def render(self):
+    def render(self, settings={}):
         template = LX_SEE_SUBORDINATE_TEX_TEMPLATE if self.is_subordinate else LX_SEE_TEX_TEMPLATE
 
         def render_alternative():

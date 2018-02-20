@@ -25,7 +25,7 @@ class File:
     - text corpus
     """
 
-    type_ids = [
+    supported_manifests = [
         (DICTIONARY_TYPE, "\\_sh v3.0  804  MDF 4.0\n"),
         (CORPUS_TYPE, "\\_sh v3.0  804  Text\n"),
     ]
@@ -36,24 +36,24 @@ class File:
         self.type = UNKNOWN_TYPE
 
         with open(path) as file:
-            self.firstline = file.readlines()[0]
+            self.firstline = file.readline()
 
-        for identifier, version_string in self.type_ids:
-            if self.firstline == version_string:
+        for identifier, manifest in self.supported_manifests:
+            if self.firstline == manifest:
                 self.type = identifier
 
     @classmethod
     def supported_types(cls):
-        return [x[0] for x in cls.type_ids]
+        return [x[0] for x in cls.supported_manifests]
 
     def is_supported(self):
         return self.type != UNKNOWN_TYPE
 
     def is_dictionary(self):
-        return self.firstline == DICTIONARY_TYPE
+        return self.type == DICTIONARY_TYPE
 
     def is_corpus(self):
-        return self.firstline == CORPUS_TYPE
+        return self.type == CORPUS_TYPE
 
     def __iter__(self):
         """Iterator for the markers in the file.

@@ -1,7 +1,8 @@
 from .utils import sortkey, capitalize_first
 
 FIGURE_TEX_TEMPLATE = r'\hwgraphic{{{path}}}{{{headword}}}{{{attribution}}}'
-FIGURE_PATH_TEMPLATE = r'figures/ill-{filename}'  # change to {filename} if you want to specify full paths.
+# change to {filename} if you want to specify full paths.
+FIGURE_PATH_TEMPLATE = r'figures/ill-{filename}'
 
 
 class Image(object):
@@ -21,7 +22,7 @@ class Image(object):
             headword=self.hw
         )
 
-    def render(self):
+    def render(self, settings={}):
         figure_path = FIGURE_PATH_TEMPLATE.format(filename=self.img_src)
         return FIGURE_TEX_TEMPLATE.format(
             headword=capitalize_first(self.hw),

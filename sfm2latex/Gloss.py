@@ -31,7 +31,7 @@ class Gloss(object):
     def minor(self):
         return self.ref.rsplit('.', 1)[1].replace('.', '')
 
-    def render(self):
+    def render(self, settings={}):
         def render_label():
             return self.ref.replace('.', '')
 

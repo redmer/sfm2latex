@@ -18,7 +18,7 @@ class WordlistHeader(object):
     def __repr__(self):
         return self.desc
 
-    def render(self):
+    def render(self, settings={}):
         if self.level == 'vernacular':
             return HEADING_TEX_TEMPLATE.format(title=self.desc)
         elif self.level == 'ht':

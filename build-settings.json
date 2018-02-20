@@ -1,14 +1,14 @@
 {
     "lang_vernacular": "qul",
     "lang_regional": "es",
-    "pos_stem_affix" : {
+    "pos_stem_affix": {
         "v": "y",
         "amb": "(y)"
     },
     "inherited": {
         "merit": [
-            "PQue", 
-            "PQueAym", 
+            "PQue",
+            "PQueAym",
             "Que",
             "SQue"
         ],
@@ -25,5 +25,8 @@
         "\\ht": "data/haspelmath-tadmor-2009.csv"
     },
     "glosses": "data/glossing-abbreviations.csv",
-    "headings": "data/language-headings.json"
+    "headings": "data/language-headings.json",
+    "target": {
+        ""
+    }
 }

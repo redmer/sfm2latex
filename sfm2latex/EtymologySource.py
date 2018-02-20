@@ -35,7 +35,7 @@ class EtymologySource(object):
             value=self.value
         )
 
-    def render(self):
+    def render(self, settings={}):
         def render_lang():
             return self.lang.strip() + ' ' if len(self.value.strip()) else self.lang.strip()
 
@@ -55,8 +55,9 @@ class EtymologySource(object):
         elif self.cert == 'dub':
             frame = r'{lang_value}?'
         else:
-            raise ValueError('cert="' + self.cert + '" which is not a valid value.')
+            raise ValueError('cert="' + self.cert +
+                             '" which is not a valid value.')
 
         return frame.format(
-                lang_value=render_lang_value()
-            ).replace(r'//', r'\textit{').replace(r'\\', r'}')
+            lang_value=render_lang_value()
+        ).replace(r'//', r'\textit{').replace(r'\\', r'}')

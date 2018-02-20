@@ -15,7 +15,7 @@ class PartOfSpeech(object):
             children=''.join([str(x) for x in self.senses]),
         )
 
-    def render(self):
+    def render(self, settings={}):
         def render_senses():
             return r'\enskip‖\enskip'.join([x.render() for x in self.senses])
 

@@ -1,73 +1,43 @@
 #!/usr/bin/python3
 
 import os
+
 from .Gloss import Gloss
+from .SFMFile import File
 from .utils import fix_orthography
-
-
-def mark_value(file):
-    """Iterator for the markers in the file.
-
-    Values are filtered through a fix_orthography function. 
-    Markers have the preceding slash removed.
-    """
-    with open(file, mode='r') as file:
-        for line in file:
-            line = line.strip()
-            if '' == line:
-                continue
-
-            try:
-                mark, value = line.split(' ', 1)
-            except ValueError:
-                continue  # with the iteration
-
-            value = fix_orthography(value)
-            mark = mark.lstrip('\\')
-            yield (mark, value)
 
 
 def glosses_in_file(read_file):
     glosses = list()
     current_example = None
 
-    for line in read_file.read().splitlines():
-        if '' == line:  # skip empty lines
-            continue
-
-        try:
-            marker, markervalue = line.split(' ', 1)
-        except ValueError:
-            continue  # with the iteration
-
-        markervalue = fix_orthography(markervalue)
-
-        if r'\ref' == marker:  # we have a new example
+    for mark, value in File(read_file):
+        if 'ref' == mark:  # we have a new example
             if current_example is not None:
                 glosses.append(current_example)
 
-            current_example = Gloss(markervalue)
+            current_example = Gloss(value)
 
-        if r'\tx' == marker:
-            current_example.tx = markervalue
+        if 'tx' == mark:
+            current_example.tx = value
 
-        elif r'\mb' == marker:
-            current_example.mb = markervalue
+        elif 'mb' == mark:
+            current_example.mb = value
 
-        elif r'\ge' == marker:
-            current_example.ge = markervalue
+        elif 'ge' == mark:
+            current_example.ge = value
 
-        elif r'\ps' == marker:
-            current_example.ps = markervalue
+        elif 'ps' == mark:
+            current_example.ps = value
 
-        elif r'\ft' == marker:
-            current_example.ft = markervalue
+        elif 'ft' == mark:
+            current_example.ft = value
 
-        elif r'\cmt' == marker:
-            current_example.cmt = markervalue
+        elif 'cmt' == mark:
+            current_example.cmt = value
 
-        elif r'\ftn' == marker:
-            current_example.ftn = markervalue
+        elif 'ftn' == mark:
+            current_example.ftn = value
 
     return glosses
 

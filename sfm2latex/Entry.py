@@ -44,7 +44,7 @@ class Entry(object):
             es=r', '.join([x.render() for x in self.es])
         )
 
-    def render(self):
+    def render(self, settings={}):
         def render_alts():
             return ', '.join(self.alts)
 

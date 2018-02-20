@@ -26,7 +26,7 @@ class Sense(object):
         )
 
     # Rendering is dependent on what elements are filled in
-    def render(self):
+    def render(self, settings={}):
         def render_english():
             try:
                 if ',' in self.de[0]:
