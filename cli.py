@@ -32,7 +32,11 @@ def main(input_paths, output, config):
 
         else:
             # do not silently ignore unsupported files.
-            raise UnsupportedFileTypeError(path)
+            # raise UnsupportedFileTypeError(path)
+            click.echo(
+                f"File '{path}' not supported. "
+                f"Supported file types: {File.supported_types}.")
+            sys.exit(500)
 
     # Load options
     with open(config) as configuration_path:

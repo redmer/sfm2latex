@@ -6,8 +6,15 @@ DICTIONARY_TYPE = 'org.sil.toolbox.filetype.dictionary'
 CORPUS_TYPE = 'org.sil.toolbox.filetype.corpus'
 
 
-class UnsupportedFileTypeError(Exception):
+class SFMError(Exception):
+    """Base class for Errors by SFM2Latex"""
     pass
+
+
+class UnsupportedFileTypeError(SFMError):
+    def __init__(self, path):
+        super(UnsupportedFileTypeError, self).__init__()
+        self.path = path
 
 
 class File:
