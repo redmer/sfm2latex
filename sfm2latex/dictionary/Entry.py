@@ -1,6 +1,6 @@
+from ..Latex import label, ref
+from ..utils import capitalize_first, sortkey
 from .PartOfSpeech import PartOfSpeech
-from .utils import sortkey, capitalize_first
-from .Latex import label, ref
 
 
 class Entry(object):

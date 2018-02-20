@@ -1,5 +1,7 @@
 import re
-from .utils import escape_for_latex, capitalize_first
+
+from ..utils import capitalize_first, escape_for_latex
+
 
 TEX_GLOSS_ENVIRONMENT = r'''\ex~\begingl
 \gla {mb}//

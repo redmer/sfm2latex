@@ -2,9 +2,9 @@
 
 import os
 
-from .Gloss import Gloss
 from ..SFMFile import File
 from ..utils import fix_orthography
+from .Gloss import Gloss
 
 
 def glosses_in_file(read_file):

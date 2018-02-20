@@ -7,13 +7,13 @@ from typing import List
 
 from pyuca import Collator
 
+from ..utils import fix_orthography
 from .Entry import Entry
 from .EtymologySource import EtymologySource
 from .Image import Image
 from .PartOfSpeech import PartOfSpeech
 from .See import See
 from .Sense import Sense
-from ..utils import fix_orthography
 from .WordlistHeader import WordlistHeader
 from .WordlistItem import WordlistItem
 
