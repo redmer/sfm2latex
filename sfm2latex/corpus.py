@@ -5,6 +5,28 @@ from .Gloss import Gloss
 from .utils import fix_orthography
 
 
+def mark_value(file):
+    """Iterator for the markers in the file.
+
+    Values are filtered through a fix_orthography function. 
+    Markers have the preceding slash removed.
+    """
+    with open(file, mode='r') as file:
+        for line in file:
+            line = line.strip()
+            if '' == line:
+                continue
+
+            try:
+                mark, value = line.split(' ', 1)
+            except ValueError:
+                continue  # with the iteration
+
+            value = fix_orthography(value)
+            mark = mark.lstrip('\\')
+            yield (mark, value)
+
+
 def glosses_in_file(read_file):
     glosses = list()
     current_example = None

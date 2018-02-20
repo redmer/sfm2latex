@@ -1,11 +1,13 @@
+from .utils import fix_orthography
+
+
+UNKNOWN_TYPE = 'org.sil.toolbox.filetype.unknown'
+DICTIONARY_TYPE = 'org.sil.toolbox.filetype.dictionary'
+CORPUS_TYPE = 'org.sil.toolbox.filetype.corpus'
+
 
 class UnsupportedFileTypeError(Exception):
     pass
-
-
-DICTIONARY_TYPE = 'dictionary'
-UNKNOWN_TYPE = 'unknown'
-CORPUS_TYPE = 'corpus'
 
 
 class File:
@@ -45,3 +47,35 @@ class File:
 
     def is_corpus(self):
         return self.firstline == CORPUS_TYPE
+
+    def __iter__(self):
+        """Iterator for the markers in the file.
+
+        Values are filtered through a fix_orthography function. 
+        Markers have the preceding slash removed.
+        """
+        with open(self.path, mode='r') as file:
+            for line in file:
+                if '\n' == line:
+                    # empty lines can be safely skipped, as the algorithm does
+                    # not rely on them
+                    continue
+
+                # remove the `\n` from the line
+                line = line.strip()
+
+                # split the value and the marker. According to SFM syntax, the
+                # marker starts with backslash. The value starts with space. We
+                # split on space and then remove the backslash.
+                try:
+                    mark, value = line.split(' ', 1)
+                    mark = mark.lstrip('\\')
+
+                except ValueError:
+                    continue  # with the iteration
+
+                # fix any orthographic problems
+                value = fix_orthography(value)
+
+                # yield to temporarily relinquish the point of execution
+                yield (mark, value)
