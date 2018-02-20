@@ -4,10 +4,10 @@ import os
 
 from ..SFMFile import File
 from ..utils import fix_orthography
-from .Gloss import Gloss
+from .Example import Example
 
 
-def glosses_in_file(read_file):
+def collect_glosses(read_file):
     glosses = list()
     current_example = None
 
@@ -16,7 +16,7 @@ def glosses_in_file(read_file):
             if current_example is not None:
                 glosses.append(current_example)
 
-            current_example = Gloss(value)
+            current_example = Example(value)
 
         if 'tx' == mark:
             current_example.tx = value
@@ -55,7 +55,7 @@ def build(input_filename, settings={}):
     in_file = open(input_filename)
 
     # Get the lexemes from the SFM file
-    examples = glosses_in_file(in_file)
+    examples = collect_glosses(in_file)
 
     # layout: {'aa' :  {001, 002, ...}, 'ab': {001, 002, ...}, ... }
     export = dict()

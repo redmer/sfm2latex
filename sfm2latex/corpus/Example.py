@@ -10,7 +10,7 @@ TEX_GLOSS_ENVIRONMENT = r'''\ex~\begingl
 \endgl\xe'''
 
 
-class Gloss(object):
+class Example(object):
     type = 'example'
 
     def __init__(self, reference_key):
