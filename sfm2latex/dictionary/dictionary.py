@@ -1,20 +1,21 @@
 #!/usr/bin/python3
 
 import json
-import sys
 import re
-from pyuca import Collator
+import sys
 from typing import List
 
-from .WordlistHeader import WordlistHeader
+from pyuca import Collator
+
 from .Entry import Entry
-from .PartOfSpeech import PartOfSpeech
-from .Image import Image
-from .See import See
 from .EtymologySource import EtymologySource
+from .Image import Image
+from .PartOfSpeech import PartOfSpeech
+from .See import See
 from .Sense import Sense
+from ..utils import fix_orthography
+from .WordlistHeader import WordlistHeader
 from .WordlistItem import WordlistItem
-from .utils import fix_orthography
 
 # We use a Unicode collator, best sorting algorithm
 c = Collator()
@@ -36,7 +37,8 @@ def headers_for(lang='english'):
             if 'sortkey' in obj:
                 for idx, val in enumerate(obj['headers']):
                     answer.append(
-                        WordlistHeader(level='vernacular', sk=obj['sortkey'][idx], desc=val)
+                        WordlistHeader(level='vernacular',
+                                       sk=obj['sortkey'][idx], desc=val)
                     )
             else:
                 for idx, val in enumerate(obj['headers']):
@@ -91,20 +93,25 @@ def items_in_file(in_file):
             current_lexeme.mr += markervalue.split(' ')
 
         elif r'\de' == marker:  # add an english sense
-            current_lexeme.parts_of_speech[-1].senses[-1].de.append(markervalue)
+            current_lexeme.parts_of_speech[-1].senses[-1].de.append(
+                markervalue)
 
         elif r'\dn' == marker:
-            current_lexeme.parts_of_speech[-1].senses[-1].dn.append(markervalue)
+            current_lexeme.parts_of_speech[-1].senses[-1].dn.append(
+                markervalue)
 
         elif r'\re' == marker:
-            current_lexeme.parts_of_speech[-1].senses[-1].re.append(markervalue)
+            current_lexeme.parts_of_speech[-1].senses[-1].re.append(
+                markervalue)
 
         elif r'\rn' == marker:
-            current_lexeme.parts_of_speech[-1].senses[-1].rn.append(markervalue)
+            current_lexeme.parts_of_speech[-1].senses[-1].rn.append(
+                markervalue)
 
         elif r'\ge' == marker:
             if '$' == markervalue[0]:
-                not_added_lexemes.append('"' + markervalue + '"\t"' + current_lexeme.hw + '"')
+                not_added_lexemes.append(
+                    '"' + markervalue + '"\t"' + current_lexeme.hw + '"')
                 skip_until_next_lx = True  # Start skipping other markers (\dt)
                 current_lexeme = None  # Don't add the \lx with a $ \ge
 
@@ -113,7 +120,9 @@ def items_in_file(in_file):
                 current_lexeme.parts_of_speech[-1].senses.append(Sense())
 
         elif r'\ht' == marker:
-            current_lexeme.parts_of_speech[-1].senses[-1].ht.append(markervalue)  # there can be multiple
+            # there can be multiple
+            current_lexeme.parts_of_speech[-1].senses[-1].ht.append(
+                markervalue)
 
         elif r'\sc' == marker:
             current_lexeme.parts_of_speech[-1].senses[-1].sc = markervalue
@@ -148,8 +157,10 @@ def items_in_file(in_file):
                 lang = values[0]
                 ety = values[1]
 
-            current_lexeme.inherited += 50 if is_ancestor_language(lang) and cert is not 'cf' else 1
-            current_lexeme.inherited -= 26 if is_not_ancestor_language(lang) and cert is not 'cf' else 1
+            current_lexeme.inherited += 50 if is_ancestor_language(
+                lang) and cert is not 'cf' else 1
+            current_lexeme.inherited -= 26 if is_not_ancestor_language(
+                lang) and cert is not 'cf' else 1
 
             current_lexeme.es.append(EtymologySource(
                 lang=lang,
@@ -214,8 +225,10 @@ def reverse_index(lexemes):
             else:
                 for meaning in item.parts_of_speech:
                     for sense in meaning.senses:
-                        index_term_english = sense.re if len(sense.re) else sense.de
-                        index_term_national = sense.rn if len(sense.rn) else sense.dn
+                        index_term_english = sense.re if len(
+                            sense.re) else sense.de
+                        index_term_national = sense.rn if len(
+                            sense.rn) else sense.dn
                         suffix = Entry.LX_WORD_INHERITED_SYMBOL if item.inherited > 0 else Entry.LX_WORD_LOAN_SYMBOL
                         target = item.hw + suffix
 
@@ -274,7 +287,8 @@ def build(input_filename, settings={}):
     indices = reverse_index(lexemes)
 
     dict_english = search_reverse_index_for_common_prefixes(indices['english'])
-    dict_national = search_reverse_index_for_common_prefixes(indices['national'])
+    dict_national = search_reverse_index_for_common_prefixes(
+        indices['national'])
 
     # Sort the dictionaries
     dict_english = sorted(
@@ -387,7 +401,8 @@ def load_ht_file():
     try:
         definition_file = open(HT_FILE_NAME, 'r')
     except FileNotFoundError:
-        print(f'File "{HT_FILE_NAME}" is missing. Please re-download it from <https://github.com/redmer/sfm2tex/>.')
+        print(
+            f'File "{HT_FILE_NAME}" is missing. Please re-download it from <https://github.com/redmer/sfm2tex/>.')
         sys.exit(2)
 
     for line in definition_file.read().splitlines():

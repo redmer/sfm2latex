@@ -1,5 +1,5 @@
-from .utils import capitalize_first
-from .Latex import ref
+from ..utils import capitalize_first
+from ..Latex import ref
 
 
 class Sense(object):

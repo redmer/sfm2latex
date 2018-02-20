@@ -3,8 +3,8 @@
 import os
 
 from .Gloss import Gloss
-from .SFMFile import File
-from .utils import fix_orthography
+from ..SFMFile import File
+from ..utils import fix_orthography
 
 
 def glosses_in_file(read_file):

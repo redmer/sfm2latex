@@ -1,4 +1,4 @@
-from .Latex import label, ref
+from ..Latex import label, ref
 
 LX_SEE_TEX_TEMPLATE = r'\hwsee{{{alternative}}}{{{headword}}}[{desc}]'
 

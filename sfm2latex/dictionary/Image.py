@@ -1,4 +1,4 @@
-from .utils import sortkey, capitalize_first
+from ..utils import sortkey, capitalize_first
 
 FIGURE_TEX_TEMPLATE = r'\hwgraphic{{{path}}}{{{headword}}}{{{attribution}}}'
 # change to {filename} if you want to specify full paths.
