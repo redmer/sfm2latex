@@ -26,9 +26,11 @@ class Example(object):
         self.whitespace_stripper = re.compile(r'(\s+)-')
 
     def major(self):
+        """The part before the last period in ref, without periods."""
         return self.ref.rsplit('.', 1)[0].replace('.', '')
 
     def minor(self):
+        """The part after the last period in ref, without periods."""
         return self.ref.rsplit('.', 1)[1].replace('.', '')
 
     def render(self, settings={}):
@@ -47,7 +49,7 @@ class Example(object):
         def render_cmt():
             return '' if len(self.cmt) < 1 else r'\\(' + capitalize_first(self.cmt.strip()) + ')'
 
-        return TEX_GLOSS_ENVIRONMENT.format(
+        return settings['render']['Example'].format(
             mb=render_mb(),
             ge=escape_for_latex(render_ge()),
             label=render_label(),

@@ -49,7 +49,7 @@ def build(input_filename, settings={}):
     # Get the lexemes from the SFM file
     examples = collect_examples(input_filename)
 
-    # layout: {'aa' :  {001, 002, ...}, 'ab': {001, 002, ...}, ... }
+    # layout: {'aa' :  {001.tex, 002.tex, ...}, 'ab': {001.tex, 002.tex, ...}, ... }
     export = dict()
 
     for e in examples:

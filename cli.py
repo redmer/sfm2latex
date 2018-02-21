@@ -4,7 +4,7 @@ from pathlib import Path
 
 import click
 
-from sfm2latex import corpus
+from sfm2latex.corpus import corpus
 from sfm2latex.SFMFile import File, UnsupportedFileTypeError
 
 
